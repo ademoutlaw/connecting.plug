@@ -22,7 +22,7 @@ function Map(level) {
 					type : m.type,
 					model : m.model,
 					volt : m.volt,
-					angle : 1,
+					angle : 0,
 					goal:false,
 					connectingTo : getNeighbors(i*size+j, size, true)
 				}
