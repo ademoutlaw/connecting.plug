@@ -52,7 +52,7 @@ Multipole.prototype.draw = function(sketch) {
 	var x = this.index.j*100;
 	var y = this.index.i*100;
 	if(this.rotated<0){
-		this.rotated+=10;
+		this.rotated+=30;
 		this.updated = this.rotated==0;
 	}
 	sketch.angleMode(sketch.DEGREES);
