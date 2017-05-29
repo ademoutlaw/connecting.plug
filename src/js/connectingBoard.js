@@ -16,7 +16,6 @@ ConnectingBoard.prototype.draw = function(sketch) {
 	if(this.updated){
 		return;
 	}
-	console.log("fg")
 	for (var i = 0; i < this.multipoles.length; i++) {
 		this.multipoles[i].draw(sketch);
 	}
@@ -28,13 +27,10 @@ ConnectingBoard.prototype.click = function(x, y) {
 	if(i<0||i>=this.size||j<0||j>=this.size){
 		return false;
 	}
-	//console.log(this.multipoles[i*this.size+j].index)
 	this.MultipoleClicked = i*this.size+j;
 	this.multipoles[i*this.size+j].click();
 	if(this.simulate()){
-		console.log("hhhhhhhhhhhhhhhhh")
-	}else{
-		console.log(":/")
+		alert("you win");
 	}
 };
 ConnectingBoard.prototype.simulate = function() {
