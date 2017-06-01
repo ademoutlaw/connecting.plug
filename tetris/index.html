@@ -3,9 +3,46 @@
 <head>
 	<meta charset="UTF-8">
 	<title>connecting</title>
+	<meta name="viewport" content="user-scalable=no,initial-scale=1,maximum-scale=1,minimum-scale=1,width=device-width">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style>
+		section {
+		    position: relative;
+		    bottom: 44px;
+		    background: rebeccapurple;
+		}
+		.btn-cmd{
+		    border-radius: 50%;
+			position: absolute;
+		}
+		.btn-up {
+		    top: -23px;
+		    left: 35px;
+		}
+
+		.btn-left {
+		    top: 0;
+		    left: 0;
+		}
+
+		.btn-right {
+		    left: 67px;
+		}
+
+		.btn-down {
+		    top: 23px;
+		    left: 35px;
+		}
+	</style>
 </head>
 <body>
+	<div id="canvas"></div>
+	<section>
+		<button onclick="move(38)" class="btn-cmd btn-up">^</button>
+		<button onclick="move(37)" class="btn-cmd btn-left"><</button>
+		<button onclick="move(39)" class="btn-cmd btn-right">></button>
+		<button onclick="move(40)" class="btn-cmd btn-down">v</button>
+	</section>
 	<script src="src/library/js/p5.js"></script>
 	<script src="src/js/tetris-component.js"></script>
 	<script src="src/js/sketch.js"></script>
