@@ -8,7 +8,7 @@ function setup() {
 	canvas.parent("canvas");
 
   	background(0);
-  	frameRate(100)
+  	//frameRate(100)
   	//noLoop();
 }
 function mouseClicked(){
